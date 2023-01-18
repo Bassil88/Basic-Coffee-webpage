@@ -1,0 +1,216 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  
+  /* colors */
+  --primary: teal;
+  --white: #fdfdfd;
+  --black: #030303;
+  
+  /* padding/margin */
+  --small: 1rem;
+  --large: 1.8rem;
+}
+
+body {
+  font-size: var(--large);
+  color: var(--primary);
+  font-family: monospace;
+}
+
+
+img{
+  width: 100%;
+}
+
+/* ------------navbar----------- */
+
+
+
+nav{
+  position: fixed;
+  left: 0rem;
+  z-index: 999999;
+  width: 100%;
+  background-color: black;
+  color:var(--white);
+  padding-top: var(--small);
+  padding-bottom: var(--small);
+}
+
+li{
+  list-style-type: none;
+  text-align: center;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+
+/* --------------heading----------- */
+h2{
+  padding: 1rem;
+}
+
+h3{
+  margin: 0 4rem;
+  padding-top:2rem;
+  padding-bottom: 2rem;
+}
+
+p{
+  padding: 1rem;
+}
+
+
+/* --------------main----------- */
+main{
+  padding-top: 10rem;
+  margin: 0 4rem;
+
+}
+
+/* --------------footer----------- */
+footer{
+  margin: 0 2rem;
+  position: absolute;
+  left: -2rem;
+  right: -2rem;
+}
+
+form{
+  background-color: black;
+  height: 25rem;
+}
+
+input{
+  display: block;
+  width: 85vw;
+  border-radius: 3px;
+  padding: 0.3rem; 
+  margin: 1.2rem 4rem;
+  
+}
+
+label{
+  margin: 0 4rem;
+}
+
+button{
+  background:transparent;
+  color:var(--white);
+  margin: 0 5rem;
+  border: none;
+}
+
+/* --------------aside section----------- */
+aside {
+  text-align: right;
+
+}
+
+
+.the-links-heading{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.div-of-p{
+  width: 18rem;
+  text-align: right;
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+}
+
+aside div{
+  width: 25rem;
+  text-align: right;
+  position: absolute;
+  top: 19rem;
+  right: 2rem;
+  
+}
+
+a{
+  font-size: 12px;
+}
+
+
+/* -------------@media section-------------- */
+
+@media (max-width: 768px){
+  aside {
+      display: none;
+    }  
+}
+
+
+
+/* -----------Desktop version-------------- */
+@media (min-width: 767px){
+
+  aside {
+      display: contents;
+    }
+
+    h3{
+      text-align: center;
+    }
+
+    footer div{
+      text-align: center;
+    }
+
+    .button-div{
+      text-align: center;
+    }
+
+    /* ------------ */
+
+    body {
+      font-size: 1.4rem;
+      color: var(--primary);
+      font-family: monospace;
+      margin-right: 27rem;
+      margin-left: 4rem;      
+    }
+
+    nav{
+      padding-top: var(--large);
+      display: flex;
+      justify-content: right;
+      height: 5rem;
+    }
+    
+    li{
+      list-style-type: none;
+      text-align: center;
+      font-size: 2rem;
+      font-size: 1.8rem;
+    
+    }
+    
+    footer{
+      margin: 0 2rem;
+      position: absolute;
+      left: -2rem;
+      right: -2rem;
+    }
+
+    input{
+      display: block;
+      width: 85vw;
+      border-radius: 3px;
+      padding: 0.3rem; 
+      margin: 1.2rem 8rem;
+      
+    }
+  
+}
